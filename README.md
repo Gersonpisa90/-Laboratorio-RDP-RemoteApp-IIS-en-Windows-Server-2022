@@ -2,28 +2,6 @@
 
 Configurar los servicios de RDP RemoteApp y RDP RemoteApp Web Client en Windows Server 2022, desplegar una página web personalizada en IIS, publicarla como aplicación RemoteApp, y acceder a ella desde un cliente Windows 10 mediante los dos métodos disponibles: el portal web clásico (/RDWeb) y el cliente HTML5 moderno (/RDWeb/webclient).
 
-🗺️ Topología del Laboratorio
-┌─────────────────────────────────────────────────────────┐
-│                     EVE-NG (Hypervisor)                  │
-│                                                         │
-│  ┌──────────────────────────┐   ┌─────────────────────┐ │
-│  │   Windows Server 2022    │   │    Windows 10        │ │
-│  │  WIN-JGPNS8B9AJ5         │   │    (Cliente)         │ │
-│  │  IP: 10.15.29.14         │◄──►│  IP: DHCP           │ │
-│  │  Dominio: itla.edu.do    │   │  Dominio: itla.edu.do│ │
-│  │                          │   │                      │ │
-│  │  Roles instalados:       │   │  Acceso via:         │ │
-│  │  ✔ AD DS                 │   │  ✔ mstsc (RDP)       │ │
-│  │  ✔ DNS                   │   │  ✔ Navegador /RDWeb  │ │
-│  │  ✔ IIS (puerto 8080)     │   │  ✔ /RDWeb/webclient  │ │
-│  │  ✔ Remote Desktop Svcs   │   │                      │ │
-│  └──────────────────────────┘   └─────────────────────┘ │
-└─────────────────────────────────────────────────────────┘
-Direccionamiento IP
-DispositivoHostnameIPRolWindows Server 2022WIN-JGPNS8B9AJ510.15.29.14Servidor RDS / AD DS / IISWindows 10—DHCP (itla.edu.do)Cliente RDP / Web
-Puertos utilizados
-PuertoProtocoloServicio3389TCPRDP (Remote Desktop)443TCP/HTTPSRD Web Access / Web Client8080TCP/HTTPIIS Página personalizada
-
 ⚙️ Roles y Características Instalados
 Rol / CaracterísticaDescripciónRemote Desktop ServicesRol principal de RDSRD Connection BrokerGestión de conexiones RemoteAppRD Session HostHost de sesiones remotasRD Web AccessPortal web para RemoteApp (/RDWeb)IIS (Web Server)Servidor web para página personalizadaAD DSActive Directory (dominio itla.edu.do)DNSResolución de nombres del dominio
 
