@@ -100,14 +100,3 @@ Una vez conectado, abrir Edge y visitar http://10.15.29.14:8080
 # VIDEO DE YOUTUBE
 -------
 https://youtu.be/yK9DC4bkLwI
-
-
-
-📁 Estructura del Repositorio
-📦 rdp-remoteapp-lab
- ┣ 📄 README.md          ← Documentación técnica (este archivo)
- ┣ 📄 documentacion.pdf  ← Versión PDF de la documentación
- ┗ 🎬 video_demo.mp4     ← Video de demostración (máx. 8 min)
-
-🔗 URLs de Acceso
-ServicioURLPágina IIShttp://10.15.29.14:8080RD Web Accesshttps://10.15.29.14/RDWebRD Web Client HTML5https://10.15.29.14/RDWeb/webclient
