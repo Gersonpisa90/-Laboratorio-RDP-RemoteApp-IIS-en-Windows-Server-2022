@@ -97,8 +97,11 @@ Una vez conectado, abrir Edge y visitar http://10.15.29.14:8080
 
 
 
-📊 Resumen de Resultados
-TareaEstadoInstalación de rol RDS✅ CompletadoPublicación de RemoteApp Programs✅ CompletadoPágina IIS personalizada (puerto 8080)✅ CompletadoEdge RemoteApp apuntando a página IIS✅ CompletadoRD Web Access clásico (/RDWeb)✅ CompletadoRD Web Client HTML5 (/RDWeb/webclient)✅ CompletadoAcceso por RDP directo desde Windows 10✅ CompletadoPágina IIS visible vía RDP y RemoteApp✅ Completado
+# VIDEO DE YOUTUBE
+-------
+https://youtu.be/yK9DC4bkLwI
+
+
 
 📁 Estructura del Repositorio
 📦 rdp-remoteapp-lab
