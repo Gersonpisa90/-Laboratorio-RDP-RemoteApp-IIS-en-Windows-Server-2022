@@ -21,8 +21,10 @@ powershellSet-RDRemoteApp `
     -Alias "msedge" `
     -CommandLineSetting Require `
     -RequiredCommandLine "http://10.15.29.14:8080"
+<img width="1024" height="769" alt="Screenshot 2026-04-03 172630" src="https://github.com/user-attachments/assets/0f62fe71-ea56-466f-aabb-ee2c301f7fd3" />
 
-3. Página IIS Personalizada
+
+4. Página IIS Personalizada
 Se creó un sitio web personalizado en IIS escuchando en el puerto 8080:
 powershell# Crear directorio del sitio
 New-Item -Path "C:\inetpub\wwwroot\MiSitio" -ItemType Directory
@@ -30,6 +32,9 @@ New-Item -Path "C:\inetpub\wwwroot\MiSitio" -ItemType Directory
 # Crear sitio en IIS
 New-WebSite -Name "MiSitioRDS" -Port 8080 `
             -PhysicalPath "C:\inetpub\wwwroot\MiSitio" -Force
+            
+<img width="1047" height="546" alt="Screenshot 2026-04-03 165426" src="https://github.com/user-attachments/assets/efdf12c3-0218-4e4a-a289-a204a8851bc7" />
+
 
 # Abrir puerto en Firewall
 New-NetFirewallRule -DisplayName "IIS Puerto 8080" `
@@ -87,6 +92,9 @@ Presionar Win + R → escribir mstsc
 Computer: WIN-JGPNS8B9AJ5.ITLA.EDU.DO
 Usuario: ITLA\Administrator
 Una vez conectado, abrir Edge y visitar http://10.15.29.14:8080
+
+<img width="1182" height="826" alt="Screenshot 2026-04-03 165336" src="https://github.com/user-attachments/assets/3448c7a0-e93d-4af4-9be5-72bdfe844d42" />
+
 
 
 📊 Resumen de Resultados
